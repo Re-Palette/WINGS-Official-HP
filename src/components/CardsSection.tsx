@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Play } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CARDS = [
   {
@@ -8,6 +9,7 @@ const CARDS = [
     image: '/about-wings.jpg',
     fallbackImage: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800',
     link: 'VIEW MORE',
+    path: '/about'
   },
   {
     title: 'PERFORMANCE',
@@ -15,6 +17,7 @@ const CARDS = [
     image: '/performance.jpg',
     fallbackImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800',
     link: 'VIEW MORE',
+    path: '/'
   },
   {
     title: 'MOVIE',
@@ -22,6 +25,7 @@ const CARDS = [
     image: '/movie.jpg',
     fallbackImage: 'https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&q=80&w=800',
     link: 'VIEW MORE',
+    path: '/',
     isMovie: true,
   }
 ];
@@ -66,12 +70,15 @@ export default function CardsSection() {
               </p>
               
               <div className="flex items-center justify-between">
-                <a href="#" className="group/link inline-flex items-center gap-4 border border-white/20 px-6 py-2 transition-all hover:border-gold hover:text-gold">
+                <Link 
+                  to={card.path} 
+                  className="group/link inline-flex items-center gap-4 border border-white/20 px-6 py-2 transition-all hover:border-gold hover:text-gold"
+                >
                   <span className="font-oswald text-[10px] tracking-[0.3em]">
                     {card.link}
                   </span>
                   <div className="w-4 h-[1px] bg-white/40 group-hover/link:bg-gold transition-colors" />
-                </a>
+                </Link>
 
                 {card.isMovie && (
                   <motion.div 

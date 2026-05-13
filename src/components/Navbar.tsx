@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Instagram, Youtube, Twitter } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const MENU_ITEMS = ['ABOUT', 'NEWS', 'MEMBER', 'PERFORMANCE', 'GALLERY', 'JOIN US', 'CONTACT'];
 
@@ -12,24 +13,24 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-8 md:px-12"
     >
       {/* Logo Section */}
-      <div className="flex flex-col">
-        <h1 className="font-display text-4xl tracking-widest text-off-white leading-none">WINGS</h1>
+      <Link to="/" className="flex flex-col group">
+        <h1 className="font-display text-4xl tracking-widest text-off-white leading-none group-hover:text-gold transition-colors">WINGS</h1>
         <p className="font-sans text-[8px] tracking-[0.2em] text-white/60 mt-1 uppercase">
           Haneda International High School<br />
           Cheerleading Team
         </p>
-      </div>
+      </Link>
 
       {/* Desktop Menu */}
       <ul className="hidden lg:flex items-center gap-8">
         {MENU_ITEMS.map((item) => (
           <li key={item}>
-            <a 
-              href={`#${item.toLowerCase().replace(' ', '-')}`}
+            <Link 
+              to={item === 'ABOUT' ? '/about' : '/'}
               className="nav-link-hover font-oswald text-xs tracking-widest font-light"
             >
               {item}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

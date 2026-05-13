@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const MENU_ITEMS = [
     { label: t.nav.about, path: '/about' },
-    { label: t.nav.news, path: '/' },
+    { label: t.nav.news, path: '/news' },
     { label: t.nav.member, path: '/' },
     { label: t.nav.performance, path: '/performance' },
     { label: t.nav.gallery, path: '/gallery' },

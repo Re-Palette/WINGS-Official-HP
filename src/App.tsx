@@ -9,6 +9,7 @@ import AboutPage from './pages/AboutPage';
 import PerformancePage from './pages/PerformancePage';
 import ContactPage from './pages/ContactPage';
 import GalleryPage from './pages/GalleryPage';
+import NewsPage from './pages/NewsPage';
 import { motion, useScroll, useSpring } from 'motion/react';
 import { useEffect } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
@@ -45,6 +46,7 @@ function AppContent() {
           <Route path="/performance" element={<PerformancePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/news" element={<NewsPage />} />
         </Routes>
       </main>
     </Router>

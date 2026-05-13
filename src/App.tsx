@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PerformancePage from './pages/PerformancePage';
+import ContactPage from './pages/ContactPage';
 import { motion, useScroll, useSpring } from 'motion/react';
 import { useEffect } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
@@ -41,6 +42,7 @@ function AppContent() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/performance" element={<PerformancePage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
     </Router>

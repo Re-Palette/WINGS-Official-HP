@@ -18,9 +18,13 @@ export default function HomePage() {
            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
              <div className="flex flex-col">
                <h2 className="font-display text-4xl tracking-widest text-off-white mb-2">WINGS</h2>
-               <p className="font-sans text-[10px] tracking-[0.2em] text-white/40 uppercase">
+               <p className="font-sans text-[10px] tracking-[0.2em] text-white/40 uppercase mb-6">
                  Haneda International High School Cheerleading Team
                </p>
+               <div className="space-y-1">
+                 <p className="font-oswald text-[10px] tracking-widest text-white/40 uppercase">{t.footer.tel}</p>
+                 <p className="font-oswald text-[10px] tracking-widest text-white/40 uppercase">{t.footer.fax}</p>
+               </div>
              </div>
 
              <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-6">

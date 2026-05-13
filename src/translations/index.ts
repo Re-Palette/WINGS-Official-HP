@@ -55,6 +55,18 @@ export interface TranslationSchema {
     futureDesc: string;
     backHome: string;
   };
+  contact: {
+    title: string;
+    subtitle: string;
+    telLabel: string;
+    faxLabel: string;
+    addressLabel: string;
+    addressValue: string;
+    socialLabel: string;
+    instagram: string;
+    line: string;
+    youtube: string;
+  };
   performance: {
     title: string;
     subtitle: string;
@@ -80,6 +92,8 @@ export interface TranslationSchema {
     activity: string;
     recruit: string;
     rights: string;
+    tel: string;
+    fax: string;
   };
 }
 
@@ -138,6 +152,18 @@ export const translations: Record<Language, TranslationSchema> = {
       futureDesc: '初心者・経験者は問いません。「誰かを応援したい」「自分を成長させたい」という強い気持ちがあれば、誰もが輝ける場所です。\n「SHINES」が灯してくれた情熱の光を胸に、私たちと一緒に「WINGS」として新しい歴史を作っていきませんか？',
       backHome: 'BACK TO HOME',
     },
+    contact: {
+      title: 'CONTACT',
+      subtitle: 'お問い合わせ',
+      telLabel: '電話番号',
+      faxLabel: 'FAX番号',
+      addressLabel: '所在地',
+      addressValue: '〒144-8544 東京都大田区本羽田3-3-15',
+      socialLabel: '公式SNS',
+      instagram: '公式Instagram',
+      line: '公式LINE',
+      youtube: '公式YouTube',
+    },
     performance: {
       title: 'PERFORMANCE',
       subtitle: '活動実績',
@@ -163,6 +189,8 @@ export const translations: Record<Language, TranslationSchema> = {
       activity: 'ACTIVITY',
       recruit: 'RECRUIT',
       rights: '© 2024 HANEDA INTERNATIONAL HIGH SCHOOL CHEERLEADING TEAM WINGS. ALL RIGHTS RESERVED.',
+      tel: 'TEL.03-3742-1511',
+      fax: 'FAX.03-3742-1534',
     }
   },
   en: {
@@ -219,6 +247,18 @@ export const translations: Record<Language, TranslationSchema> = {
       futureDesc: 'Beginners and experienced members are all welcome. As long as you have a strong desire to "cheer someone on" or "grow yourself," this is a place where anyone can shine.\nWith the light of passion that "SHINES" ignited in our hearts, why not create a new history with us as "WINGS"?',
       backHome: 'BACK TO HOME',
     },
+    contact: {
+      title: 'CONTACT',
+      subtitle: 'Get in Touch',
+      telLabel: 'Phone',
+      faxLabel: 'FAX',
+      addressLabel: 'Address',
+      addressValue: '3-3-15 Honhaneda, Ota-ku, Tokyo 144-8544, Japan',
+      socialLabel: 'Official SNS',
+      instagram: 'Official Instagram',
+      line: 'Official LINE',
+      youtube: 'Official YouTube',
+    },
     performance: {
       title: 'PERFORMANCE',
       subtitle: 'Activity Results',
@@ -244,6 +284,8 @@ export const translations: Record<Language, TranslationSchema> = {
       activity: 'ACTIVITY',
       recruit: 'RECRUIT',
       rights: '© 2024 HANEDA INTERNATIONAL HIGH SCHOOL CHEERLEADING TEAM WINGS. ALL RIGHTS RESERVED.',
+      tel: 'TEL.03-3742-1511',
+      fax: 'FAX.03-3742-1534',
     }
   },
   ko: {
@@ -300,6 +342,18 @@ export const translations: Record<Language, TranslationSchema> = {
       futureDesc: '초보자, 유경험자 모두 환영합니다. "누군가를 응원하고 싶다", "자신을 성장시키고 싶다"는 강한 의지만 있다면 누구든 빛날 수 있는 곳입니다.\n"SHINES"가 밝혀준 열정의 빛을 가슴에 품고, 우리와 함께 "WINGS"로서 새로운 역사를 만들어가보지 않겠습니까?',
       backHome: '홈으로 돌아가기',
     },
+    contact: {
+      title: 'CONTACT',
+      subtitle: '문의하기',
+      telLabel: '전화번호',
+      faxLabel: '팩스번호',
+      addressLabel: '주소',
+      addressValue: '3-3-15 Honhaneda, Ota-ku, Tokyo 144-8544, Japan',
+      socialLabel: '공식 SNS',
+      instagram: '공식 Instagram',
+      line: '공식 LINE',
+      youtube: '공식 YouTube',
+    },
     performance: {
       title: 'PERFORMANCE',
       subtitle: '활동 실적',
@@ -325,6 +379,8 @@ export const translations: Record<Language, TranslationSchema> = {
       activity: 'ACTIVITY',
       recruit: 'RECRUIT',
       rights: '© 2024 HANEDA INTERNATIONAL HIGH SCHOOL CHEERLEADING TEAM WINGS. ALL RIGHTS RESERVED.',
+      tel: 'TEL.03-3742-1511',
+      fax: 'FAX.03-3742-1534',
     }
   },
   zh: {
@@ -381,6 +437,18 @@ export const translations: Record<Language, TranslationSchema> = {
       futureDesc: '无论有无经验，只要有"想要支持他人"、"想要让自己成长"的强烈愿望，这里就是每个人都能发光发热的地方。\n满怀"SHINES"点燃的激情之光，何不与我们一起，作为"WINGS"创造新的历史？',
       backHome: '返回首页',
     },
+    contact: {
+      title: 'CONTACT',
+      subtitle: '联系我们',
+      telLabel: '电话',
+      faxLabel: '传真',
+      addressLabel: '地址',
+      addressValue: '3-3-15 Honhaneda, Ota-ku, Tokyo 144-8544, Japan',
+      socialLabel: '官方社交平台',
+      instagram: '官方 Instagram',
+      line: '官方 LINE',
+      youtube: '官方 YouTube',
+    },
     performance: {
       title: 'PERFORMANCE',
       subtitle: '活动业绩',
@@ -406,6 +474,8 @@ export const translations: Record<Language, TranslationSchema> = {
       activity: 'ACTIVITY',
       recruit: 'RECRUIT',
       rights: '© 2024 HANEDA INTERNATIONAL HIGH SCHOOL CHEERLEADING TEAM WINGS. ALL RIGHTS RESERVED.',
+      tel: 'TEL.03-3742-1511',
+      fax: 'FAX.03-3742-1534',
     }
   }
 };

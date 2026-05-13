@@ -14,7 +14,7 @@ export default function PerformancePage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] w-full overflow-hidden flex items-center justify-center pt-20">
+      <section className="relative h-[65vh] min-h-[500px] w-full overflow-hidden flex items-center justify-center pt-32">
         <div className="absolute inset-0 z-0">
           <img
             src="/performance.jpg"
@@ -217,9 +217,13 @@ export default function PerformancePage() {
         <NewsBar />
         <div className="bg-navy-dark py-12 text-center border-t border-white/5">
              <h2 className="font-display text-4xl tracking-widest text-off-white mb-2">WINGS</h2>
-             <p className="font-sans text-[10px] tracking-[0.2em] text-white/40 uppercase">
+             <p className="font-sans text-[10px] tracking-[0.2em] text-white/40 uppercase mb-4">
                Haneda International High School Cheerleading Team
              </p>
+             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
+               <p className="font-oswald text-[10px] tracking-widest text-white/40 uppercase">{t.footer.tel}</p>
+               <p className="font-oswald text-[10px] tracking-widest text-white/40 uppercase">{t.footer.fax}</p>
+             </div>
         </div>
       </footer>
     </main>

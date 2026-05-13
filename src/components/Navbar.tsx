@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Instagram, Youtube, Twitter, Globe } from 'lucide-react';
+import { Instagram, Youtube, MessageCircle, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { Language } from '../translations';
@@ -14,7 +14,7 @@ export default function Navbar() {
     { label: t.nav.performance, path: '/performance' },
     { label: t.nav.gallery, path: '/' },
     { label: t.nav.joinUs, path: '/' },
-    { label: t.nav.contact, path: '/' },
+    { label: t.nav.contact, path: '/contact' },
   ];
 
   const langs: { code: Language; label: string }[] = [
@@ -57,13 +57,13 @@ export default function Navbar() {
       {/* Social & Language */}
       <div className="flex items-center gap-6">
         <div className="hidden md:flex items-center gap-4 mr-4">
-          <motion.a whileHover={{ color: '#F4C542' }} href="#" className="text-white/60 transition-colors">
+          <motion.a whileHover={{ color: '#F4C542' }} href="https://www.instagram.com/hanedakokusaikoukou/" target="_blank" rel="noopener noreferrer" className="text-white/60 transition-colors">
             <Instagram size={18} strokeWidth={1.5} />
           </motion.a>
-          <motion.a whileHover={{ color: '#F4C542' }} href="#" className="text-white/60 transition-colors">
-            <Twitter size={18} strokeWidth={1.5} />
+          <motion.a whileHover={{ color: '#F4C542' }} href="https://page.line.me/589sdhsw?oat_content=url&openQrModal=true" target="_blank" rel="noopener noreferrer" className="text-white/60 transition-colors">
+            <MessageCircle size={18} strokeWidth={1.5} />
           </motion.a>
-          <motion.a whileHover={{ color: '#F4C542' }} href="#" className="text-white/60 transition-colors">
+          <motion.a whileHover={{ color: '#F4C542' }} href="https://www.youtube.com/@user-ug5fl9ye5j" target="_blank" rel="noopener noreferrer" className="text-white/60 transition-colors">
             <Youtube size={18} strokeWidth={1.5} />
           </motion.a>
         </div>

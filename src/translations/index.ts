@@ -67,6 +67,11 @@ export interface TranslationSchema {
     line: string;
     youtube: string;
   };
+  gallery: {
+    title: string;
+    subtitle: string;
+    comingSoon: string;
+  };
   performance: {
     title: string;
     subtitle: string;
@@ -164,6 +169,11 @@ export const translations: Record<Language, TranslationSchema> = {
       line: '公式LINE',
       youtube: '公式YouTube',
     },
+    gallery: {
+      title: 'GALLERY',
+      subtitle: 'ギャラリー',
+      comingSoon: 'COMING SOON',
+    },
     performance: {
       title: 'PERFORMANCE',
       subtitle: '活動実績',
@@ -258,6 +268,11 @@ export const translations: Record<Language, TranslationSchema> = {
       instagram: 'Official Instagram',
       line: 'Official LINE',
       youtube: 'Official YouTube',
+    },
+    gallery: {
+      title: 'GALLERY',
+      subtitle: 'Gallery',
+      comingSoon: 'COMING SOON',
     },
     performance: {
       title: 'PERFORMANCE',
@@ -354,6 +369,11 @@ export const translations: Record<Language, TranslationSchema> = {
       line: '공식 LINE',
       youtube: '공식 YouTube',
     },
+    gallery: {
+      title: 'GALLERY',
+      subtitle: '갤러리',
+      comingSoon: 'COMING SOON',
+    },
     performance: {
       title: 'PERFORMANCE',
       subtitle: '활동 실적',
@@ -448,6 +468,11 @@ export const translations: Record<Language, TranslationSchema> = {
       instagram: '官方 Instagram',
       line: '官方 LINE',
       youtube: '官方 YouTube',
+    },
+    gallery: {
+      title: 'GALLERY',
+      subtitle: '影集',
+      comingSoon: '即将推出',
     },
     performance: {
       title: 'PERFORMANCE',

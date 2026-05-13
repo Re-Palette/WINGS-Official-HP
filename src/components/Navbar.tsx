@@ -12,7 +12,7 @@ export default function Navbar() {
     { label: t.nav.news, path: '/' },
     { label: t.nav.member, path: '/' },
     { label: t.nav.performance, path: '/performance' },
-    { label: t.nav.gallery, path: '/' },
+    { label: t.nav.gallery, path: '/gallery' },
     { label: t.nav.joinUs, path: '/' },
     { label: t.nav.contact, path: '/contact' },
   ];

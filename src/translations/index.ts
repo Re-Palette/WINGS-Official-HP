@@ -72,6 +72,11 @@ export interface TranslationSchema {
     subtitle: string;
     comingSoon: string;
   };
+  movie: {
+    title: string;
+    subtitle: string;
+    comingSoon: string;
+  };
   news: {
     title: string;
     subtitle: string;
@@ -184,6 +189,11 @@ export const translations: Record<Language, TranslationSchema> = {
       subtitle: 'ギャラリー',
       comingSoon: 'COMING SOON',
     },
+    movie: {
+      title: 'MOVIE',
+      subtitle: 'ムービー',
+      comingSoon: 'COMING SOON',
+    },
     performance: {
       title: 'PERFORMANCE',
       subtitle: '活動実績',
@@ -287,6 +297,11 @@ export const translations: Record<Language, TranslationSchema> = {
     gallery: {
       title: 'GALLERY',
       subtitle: 'Gallery',
+      comingSoon: 'COMING SOON',
+    },
+    movie: {
+      title: 'MOVIE',
+      subtitle: 'Movie',
       comingSoon: 'COMING SOON',
     },
     performance: {
@@ -394,6 +409,11 @@ export const translations: Record<Language, TranslationSchema> = {
       subtitle: '갤러리',
       comingSoon: 'COMING SOON',
     },
+    movie: {
+      title: 'MOVIE',
+      subtitle: '무비',
+      comingSoon: 'COMING SOON',
+    },
     performance: {
       title: 'PERFORMANCE',
       subtitle: '활동 실적',
@@ -497,6 +517,11 @@ export const translations: Record<Language, TranslationSchema> = {
     gallery: {
       title: 'GALLERY',
       subtitle: '影集',
+      comingSoon: '即将推出',
+    },
+    movie: {
+      title: 'MOVIE',
+      subtitle: '视频',
       comingSoon: '即将推出',
     },
     performance: {

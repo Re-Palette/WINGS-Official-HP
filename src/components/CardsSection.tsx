@@ -29,7 +29,7 @@ export default function CardsSection() {
       image: '/movie.jpg',
       fallbackImage: 'https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&q=80&w=800',
       link: t.cards.movie.button,
-      path: '/',
+      path: '/movie',
       isMovie: true,
     }
   ];
@@ -84,12 +84,14 @@ export default function CardsSection() {
                 </Link>
 
                 {card.isMovie && (
-                  <motion.div 
-                    whileHover={{ scale: 1.1 }}
-                    className="w-16 h-16 border border-gold rounded-full flex items-center justify-center text-gold cursor-pointer"
-                  >
-                    <Play fill="currentColor" size={20} className="ml-1" />
-                  </motion.div>
+                  <Link to="/movie">
+                    <motion.div 
+                      whileHover={{ scale: 1.1 }}
+                      className="w-16 h-16 border border-gold rounded-full flex items-center justify-center text-gold cursor-pointer"
+                    >
+                      <Play fill="currentColor" size={20} className="ml-1" />
+                    </motion.div>
+                  </Link>
                 )}
               </div>
             </div>

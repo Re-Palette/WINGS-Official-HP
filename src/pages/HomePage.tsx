@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import CardsSection from '../components/CardsSection';
 import NewsBar from '../components/NewsBar';
 import { useLanguage } from '../context/LanguageContext';
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -30,21 +31,18 @@ export default function HomePage() {
              <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-6">
                 <div className="space-y-2">
                   <p className="font-oswald text-[10px] tracking-widest text-gold mb-4 uppercase">{t.footer.org}</p>
-                  <a href="#" className="block text-xs text-white/50 hover:text-white transition-colors">About Us</a>
-                  <a href="#" className="block text-xs text-white/50 hover:text-white transition-colors">Philosophy</a>
-                  <a href="#" className="block text-xs text-white/50 hover:text-white transition-colors">Staff</a>
+                  <Link to="/about" className="block text-xs text-white/50 hover:text-white transition-colors">About Us</Link>
+                  <Link to="/gallery" className="block text-xs text-white/50 hover:text-white transition-colors">Gallery</Link>
+                  <Link to="/news" className="block text-xs text-white/50 hover:text-white transition-colors">News</Link>
                 </div>
                 <div className="space-y-2">
                   <p className="font-oswald text-[10px] tracking-widest text-gold mb-4 uppercase">{t.footer.activity}</p>
-                  <a href="#" className="block text-xs text-white/50 hover:text-white transition-colors">Practice</a>
-                  <a href="#" className="block text-xs text-white/50 hover:text-white transition-colors">Events</a>
-                  <a href="#" className="block text-xs text-white/50 hover:text-white transition-colors">Results</a>
+                  <Link to="/movie" className="block text-xs text-white/50 hover:text-white transition-colors">Movie</Link>
+                  <Link to="/performance" className="block text-xs text-white/50 hover:text-white transition-colors">Performance</Link>
                 </div>
                 <div className="space-y-2">
                   <p className="font-oswald text-[10px] tracking-widest text-gold mb-4 uppercase">{t.footer.recruit}</p>
-                  <a href="#" className="block text-xs text-white/50 hover:text-white transition-colors">Member</a>
-                  <a href="#" className="block text-xs text-white/50 hover:text-white transition-colors">Junior High</a>
-                  <a href="#" className="block text-xs text-white/50 hover:text-white transition-colors">Contact</a>
+                  <Link to="/contact" className="block text-xs text-white/50 hover:text-white transition-colors">Contact</Link>
                 </div>
              </div>
            </div>

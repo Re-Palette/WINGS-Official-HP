@@ -55,6 +55,26 @@ export interface TranslationSchema {
     futureDesc: string;
     backHome: string;
   };
+  performance: {
+    title: string;
+    subtitle: string;
+    competitionTitle: string;
+    competitionDesc: string;
+    japanCup: string;
+    kantoRegion: string;
+    tokyoHigh: string;
+    schoolLifeTitle: string;
+    schoolLifeDesc: string;
+    aritakeFestival: string;
+    aritakeFestivalDesc: string;
+    clubIntro: string;
+    clubIntroDesc: string;
+    communityTitle: string;
+    communityDesc: string;
+    kamataPolice: string;
+    haginakaParty: string;
+    gundamEvent: string;
+  };
   footer: {
     org: string;
     activity: string;
@@ -118,6 +138,26 @@ export const translations: Record<Language, TranslationSchema> = {
       futureDesc: '初心者・経験者は問いません。「誰かを応援したい」「自分を成長させたい」という強い気持ちがあれば、誰もが輝ける場所です。\n「SHINES」が灯してくれた情熱の光を胸に、私たちと一緒に「WINGS」として新しい歴史を作っていきませんか？',
       backHome: 'BACK TO HOME',
     },
+    performance: {
+      title: 'PERFORMANCE',
+      subtitle: '活動実績',
+      competitionTitle: '1. Competition | 競技大会の実績',
+      competitionDesc: 'チアリーディングの技術を競う「競技チア」としての実績です。蒲田女子高等学校「SHINES」から受け継いだ高い技術力を武器に、全国の舞台に挑み続けています。',
+      japanCup: '日本チアリーディング選手権大会（JAPAN CUP）',
+      kantoRegion: '関東チアリーディング選手権大会',
+      tokyoHigh: '東京都高等学校チアリーディング大会',
+      schoolLifeTitle: '2. School Life & Cheering | 学校生活・応援活動',
+      schoolLifeDesc: '「応援の力」を体現する、学校内での活動です。他部活との繋がりを大切にし、羽田国際高等学校全体の士気を高めます。',
+      aritakeFestival: '有竹祭（文化祭）',
+      aritakeFestivalDesc: 'WINGSのメインステージ。全校生徒が一体となる、迫力あるスタンツを披露します。',
+      clubIntro: 'クラブ紹介・新入生歓迎演技',
+      clubIntroDesc: '新しい仲間を迎えるための、心躍るウェルカムパフォーマンス。',
+      communityTitle: '3. Community & Media | 地域交流・メディア',
+      communityDesc: '「地域に愛されるチーム」を目指し、羽田・蒲田エリアを中心とした様々なイベントに出演しています。',
+      kamataPolice: '蒲田警察　交通安全イベント',
+      haginakaParty: '萩中ガーデンパーティー',
+      gundamEvent: 'ガンダムイベント',
+    },
     footer: {
       org: 'ORGANIZATION',
       activity: 'ACTIVITY',
@@ -178,6 +218,26 @@ export const translations: Record<Language, TranslationSchema> = {
       futureTitle: 'To Future WINGS',
       futureDesc: 'Beginners and experienced members are all welcome. As long as you have a strong desire to "cheer someone on" or "grow yourself," this is a place where anyone can shine.\nWith the light of passion that "SHINES" ignited in our hearts, why not create a new history with us as "WINGS"?',
       backHome: 'BACK TO HOME',
+    },
+    performance: {
+      title: 'PERFORMANCE',
+      subtitle: 'Activity Results',
+      competitionTitle: '1. Competition | Results of Competitive Cheerleading',
+      competitionDesc: 'Results as "Competitive Cheer" competing in cheerleading techniques. Using high technical skills inherited from "SHINES" of Kamata Girls\' High School, we continue to challenge the national stage.',
+      japanCup: 'Japan Cheerleading Championship (JAPAN CUP)',
+      kantoRegion: 'Kanto Cheerleading Championship',
+      tokyoHigh: 'Tokyo High School Cheerleading Competition',
+      schoolLifeTitle: '2. School Life & Cheering | School Activities & Cheering',
+      schoolLifeDesc: 'Activities within the school that embody the "power of cheering." We value connections with other clubs and boost the morale of Haneda International High School as a whole.',
+      aritakeFestival: 'Aritake Festival (Cultural Festival)',
+      aritakeFestivalDesc: 'WINGS main stage. We show powerful stunts where the entire student body becomes one.',
+      clubIntro: 'Club Introduction & Welcome Performance',
+      clubIntroDesc: 'Exciting welcome performance to greet new friends.',
+      communityTitle: '3. Community & Media | Regional Exchange & Media',
+      communityDesc: 'Aiming to be a "team loved by the region," we appear in various events centered around the Haneda and Kamata areas.',
+      kamataPolice: 'Kamata Police Traffic Safety Event',
+      haginakaParty: 'Haginaka Garden Party',
+      gundamEvent: 'Gundam Event',
     },
     footer: {
       org: 'ORGANIZATION',
@@ -240,6 +300,26 @@ export const translations: Record<Language, TranslationSchema> = {
       futureDesc: '초보자, 유경험자 모두 환영합니다. "누군가를 응원하고 싶다", "자신을 성장시키고 싶다"는 강한 의지만 있다면 누구든 빛날 수 있는 곳입니다.\n"SHINES"가 밝혀준 열정의 빛을 가슴에 품고, 우리와 함께 "WINGS"로서 새로운 역사를 만들어가보지 않겠습니까?',
       backHome: '홈으로 돌아가기',
     },
+    performance: {
+      title: 'PERFORMANCE',
+      subtitle: '활동 실적',
+      competitionTitle: '1. Competition | 경기 대회 실적',
+      competitionDesc: '치어리딩 기술을 겨루는 "경기 치어"로서의 실적입니다. 카마타 여자 고등학교 "SHINES"에서 이어받은 높은 기술력을 무기로 전국의 무대에 계속 도전하고 있습니다.',
+      japanCup: '일본 치어리딩 선수권 대회 (JAPAN CUP)',
+      kantoRegion: '관동 치어리딩 선수권 대회',
+      tokyoHigh: '도쿄도 고등학교 치어리딩 대회',
+      schoolLifeTitle: '2. School Life & Cheering | 학교 생활 및 응원 활동',
+      schoolLifeDesc: '"응원의 힘"을 구현하는 학교 내 활동입니다. 타 부활동과의 유대를 소중히 여기며 하네다 국제 고등학교 전체의 사기를 높입니다.',
+      aritakeFestival: '아리타케 축제 (문화제)',
+      aritakeFestivalDesc: 'WINGS의 메인 스테이지. 전교생이 하나가 되는 박력 있는 스턴트를 선보입니다.',
+      clubIntro: '클럽 소개 및 신입생 환영 연기',
+      clubIntroDesc: '새로운 동료를 맞이하기 위한 설레는 웰컴 퍼포먼스.',
+      communityTitle: '3. Community & Media | 지역 교류 및 미디어',
+      communityDesc: '"지역사회에 사랑받는 팀"을 목표로 하네다와 카마타 지역을 중심으로 다양한 이벤트에 출연하고 있습니다.',
+      kamataPolice: '카마타 경찰 교통안전 이벤트',
+      haginakaParty: '하기나카 가든 파티',
+      gundamEvent: '건담 이벤트',
+    },
     footer: {
       org: 'ORGANIZATION',
       activity: 'ACTIVITY',
@@ -300,6 +380,26 @@ export const translations: Record<Language, TranslationSchema> = {
       futureTitle: '致未来的 WINGS',
       futureDesc: '无论有无经验，只要有"想要支持他人"、"想要让自己成长"的强烈愿望，这里就是每个人都能发光发热的地方。\n满怀"SHINES"点燃的激情之光，何不与我们一起，作为"WINGS"创造新的历史？',
       backHome: '返回首页',
+    },
+    performance: {
+      title: 'PERFORMANCE',
+      subtitle: '活动业绩',
+      competitionTitle: '1. Competition | 竞技比赛成绩',
+      competitionDesc: '作为比拼啦啦队技术的“竞技啦啦队”的成绩。以传承自蒲田女子高级中学“SHINES”的高超技术为武器，不断挑战全国舞台。',
+      japanCup: '日本啦啦队锦标赛 (JAPAN CUP)',
+      kantoRegion: '关东啦啦队锦标赛',
+      tokyoHigh: '东京都高级中学啦啦队大会',
+      schoolLifeTitle: '2. School Life & Cheering | 学校生活与助威活动',
+      schoolLifeDesc: '体现“助威力量”的校内活动。重视与其他社团的联系，提高羽田国际高级中学整体士气。',
+      aritakeFestival: '有竹祭 (文化祭)',
+      aritakeFestivalDesc: 'WINGS的主舞台。全校师生融为一体，展现震撼人心的托举动作。',
+      clubIntro: '社团介绍及迎新表演',
+      clubIntroDesc: '迎接新伙伴的光彩夺目的欢迎表演。',
+      communityTitle: '3. Community & Media | 社区交流与媒体',
+      communityDesc: '以打造“受地区喜爱的队伍”为目标，以羽田、蒲田地区为中心参加各类活动。',
+      kamataPolice: '蒲田警察交通安全活动',
+      haginakaParty: '萩中花园派对',
+      gundamEvent: '高达活动',
     },
     footer: {
       org: 'ORGANIZATION',

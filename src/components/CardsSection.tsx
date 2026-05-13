@@ -21,7 +21,7 @@ export default function CardsSection() {
       image: '/performance.jpg',
       fallbackImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800',
       link: t.cards.performance.button,
-      path: '/'
+      path: '/performance'
     },
     {
       title: t.cards.movie.title,
@@ -64,7 +64,7 @@ export default function CardsSection() {
             
             {/* Content */}
             <div className="absolute inset-0 p-12 flex flex-col justify-end">
-              <h3 className="font-display text-4xl tracking-widest text-white mb-6 transition-transform duration-500 group-hover:-translate-y-2 uppercase">
+              <h3 className="font-display text-2xl md:text-4xl tracking-widest text-white mb-6 transition-transform duration-500 group-hover:-translate-y-2 uppercase">
                 {card.title}
               </h3>
               

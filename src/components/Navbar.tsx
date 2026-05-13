@@ -11,7 +11,7 @@ export default function Navbar() {
     { label: t.nav.about, path: '/about' },
     { label: t.nav.news, path: '/' },
     { label: t.nav.member, path: '/' },
-    { label: t.nav.performance, path: '/' },
+    { label: t.nav.performance, path: '/performance' },
     { label: t.nav.gallery, path: '/' },
     { label: t.nav.joinUs, path: '/' },
     { label: t.nav.contact, path: '/' },

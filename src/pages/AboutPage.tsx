@@ -31,7 +31,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="font-display text-7xl md:text-9xl tracking-[0.2em] text-white uppercase"
+            className="font-display text-4xl md:text-7xl tracking-[0.2em] text-white uppercase"
           >
             {t.about.title}
           </motion.h1>
@@ -55,7 +55,7 @@ export default function AboutPage() {
            viewport={{ once: true }}
            className="mb-24"
         >
-          <h2 className="font-display text-4xl text-gold mb-8 flex items-center gap-4">
+          <h2 className="font-display text-2xl md:text-4xl text-gold mb-8 flex items-center gap-4">
             <span className="w-12 h-[1px] bg-gold" /> {t.about.wingsTitle}
           </h2>
           <div className="space-y-6">
@@ -73,7 +73,7 @@ export default function AboutPage() {
            viewport={{ once: true }}
            className="mb-24 relative p-8 md:p-12 border border-white/10 bg-white/5"
         >
-          <h2 className="font-display text-4xl text-gold mb-8 italic uppercase">{t.about.shinesTitle}</h2>
+          <h2 className="font-display text-2xl md:text-4xl text-gold mb-8 italic uppercase">{t.about.shinesTitle}</h2>
           <div className="space-y-6">
             <h3 className="font-sans font-bold text-2xl text-white">{t.about.legacy}</h3>
             <p className="font-sans text-white/80 leading-loose text-lg">
@@ -95,7 +95,7 @@ export default function AboutPage() {
            viewport={{ once: true }}
            className="mb-24"
         >
-          <h2 className="font-display text-4xl text-gold mb-8 flex items-center gap-4">
+          <h2 className="font-display text-2xl md:text-4xl text-gold mb-8 flex items-center gap-4">
              {t.about.activityTitle}
           </h2>
           <div className="grid md:grid-cols-2 gap-12 mt-12">
@@ -121,7 +121,7 @@ export default function AboutPage() {
            viewport={{ once: true }}
            className="text-center bg-royal/10 p-12 md:p-20 rounded-sm border border-royal/20"
         >
-          <h2 className="font-display text-5xl text-white mb-6 tracking-widest uppercase">{t.about.futureTitle}</h2>
+          <h2 className="font-display text-3xl md:text-5xl text-white mb-6 tracking-widest uppercase">{t.about.futureTitle}</h2>
           <p className="font-sans text-white/80 leading-loose text-lg mb-10 max-w-2xl mx-auto whitespace-pre-line">
             {t.about.futureDesc}
           </p>

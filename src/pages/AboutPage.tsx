@@ -3,9 +3,11 @@ import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import NewsBar from '../components/NewsBar';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function AboutPage() {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   return (
     <main className="relative min-h-screen bg-navy-dark selection:bg-gold selection:text-navy-dark overflow-x-hidden">
@@ -29,17 +31,17 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="font-display text-7xl md:text-9xl tracking-[0.2em] text-white"
+            className="font-display text-7xl md:text-9xl tracking-[0.2em] text-white uppercase"
           >
-            ABOUT WINGS
+            {t.about.title}
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="font-oswald text-gold tracking-[0.5em] text-sm md:text-base mt-4"
+            className="font-oswald text-gold tracking-[0.5em] text-sm md:text-base mt-4 uppercase"
           >
-            OUR IDENTITY & SPIRIT
+            {t.about.subtitle}
           </motion.p>
         </div>
       </section>
@@ -54,13 +56,12 @@ export default function AboutPage() {
            className="mb-24"
         >
           <h2 className="font-display text-4xl text-gold mb-8 flex items-center gap-4">
-            <span className="w-12 h-[1px] bg-gold" /> WINGS（ウィングス）
+            <span className="w-12 h-[1px] bg-gold" /> {t.about.wingsTitle}
           </h2>
           <div className="space-y-6">
-            <h3 className="font-sans font-bold text-2xl text-white">私たちのアイデンティティ</h3>
-            <p className="font-sans text-white/80 leading-loose text-lg">
-              羽田国際高等学校チアリーディング部「WINGS」は、その名の通り「世界へ、そして未来へ羽ばたく」をモットーに活動しているチームです。<br />
-              チアリーディングの技術向上はもちろんのこと、見ているすべての人に勇気と元気を届け、応援される存在であることを大切にしています。
+            <h3 className="font-sans font-bold text-2xl text-white">{t.about.identity}</h3>
+            <p className="font-sans text-white/80 leading-loose text-lg whitespace-pre-line">
+              {t.about.wingsDesc}
             </p>
           </div>
         </motion.div>
@@ -72,15 +73,14 @@ export default function AboutPage() {
            viewport={{ once: true }}
            className="mb-24 relative p-8 md:p-12 border border-white/10 bg-white/5"
         >
-          <h2 className="font-display text-4xl text-gold mb-8 italic">“SHINES” TO “WINGS”</h2>
+          <h2 className="font-display text-4xl text-gold mb-8 italic uppercase">{t.about.shinesTitle}</h2>
           <div className="space-y-6">
-            <h3 className="font-sans font-bold text-2xl text-white">継承される魂</h3>
+            <h3 className="font-sans font-bold text-2xl text-white">{t.about.legacy}</h3>
             <p className="font-sans text-white/80 leading-loose text-lg">
-              私たちのルーツは、前身である蒲田女子高等学校チアリーディング部「SHINES（シャインズ）」にあります。
+              {t.about.shinesDesc1}
             </p>
-            <p className="font-sans text-white/80 leading-loose text-lg">
-              長年、多くの方々に愛され、数々の功績を残してきた「SHINES」。その伝統である「明るさ・礼儀・不屈の精神」は、校名が変わった今も、私たちの根底に脈々と流れています。<br />
-              「SHINES」として築き上げた輝かしい歴史と、地域の方々や卒業生との絆を大切にしながら、私たちは「WINGS」として新たな空へと飛び立ちました。
+            <p className="font-sans text-white/80 leading-loose text-lg whitespace-pre-line">
+              {t.about.shinesDesc2}
             </p>
           </div>
           {/* Decorative element */}
@@ -96,19 +96,19 @@ export default function AboutPage() {
            className="mb-24"
         >
           <h2 className="font-display text-4xl text-gold mb-8 flex items-center gap-4">
-             活動内容と目標
+             {t.about.activityTitle}
           </h2>
           <div className="grid md:grid-cols-2 gap-12 mt-12">
             <div className="space-y-4">
-              <h4 className="font-display text-xl text-white tracking-widest border-b border-white/20 pb-2">競技への挑戦</h4>
+              <h4 className="font-display text-xl text-white tracking-widest border-b border-white/20 pb-2">{t.about.challengeTitle}</h4>
               <p className="font-sans text-white/70 leading-relaxed">
-                競技チアリーディングにおける大会出場（JCA主催大会など）を主軸に、難度の高いタンブリングやスタンツに挑戦し、全国大会での上位入賞を目指します。
+                {t.about.challengeDesc}
               </p>
             </div>
             <div className="space-y-4">
-              <h4 className="font-display text-xl text-white tracking-widest border-b border-white/20 pb-2">「応援」のプロとして</h4>
+              <h4 className="font-display text-xl text-white tracking-widest border-b border-white/20 pb-2">{t.about.proTitle}</h4>
               <p className="font-sans text-white/70 leading-relaxed">
-                学内の部活動応援や地域イベントでのパフォーマンスを通じて、誰かを励ますことの素晴らしさを学び、チームメイトとの信頼関係を築きます。
+                {t.about.proDesc}
               </p>
             </div>
           </div>
@@ -121,10 +121,9 @@ export default function AboutPage() {
            viewport={{ once: true }}
            className="text-center bg-royal/10 p-12 md:p-20 rounded-sm border border-royal/20"
         >
-          <h2 className="font-display text-5xl text-white mb-6 tracking-widest">未来のWINGSへ</h2>
-          <p className="font-sans text-white/80 leading-loose text-lg mb-10 max-w-2xl mx-auto">
-            初心者・経験者は問いません。「誰かを応援したい」「自分を成長させたい」という強い気持ちがあれば、誰もが輝ける場所です。<br />
-            「SHINES」が灯してくれた情熱の光を胸に、私たちと一緒に「WINGS」として新しい歴史を作っていきませんか？
+          <h2 className="font-display text-5xl text-white mb-6 tracking-widest uppercase">{t.about.futureTitle}</h2>
+          <p className="font-sans text-white/80 leading-loose text-lg mb-10 max-w-2xl mx-auto whitespace-pre-line">
+            {t.about.futureDesc}
           </p>
           <button 
             onClick={() => navigate('/')}
@@ -132,7 +131,7 @@ export default function AboutPage() {
           >
             <div className="absolute inset-0 bg-gold translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
             <span className="relative z-10 font-oswald text-sm tracking-[0.3em] text-gold group-hover:text-navy-dark transition-colors flex items-center gap-4">
-               <ArrowLeft size={18} /> BACK TO HOME
+               <ArrowLeft size={18} /> {t.about.backHome}
             </span>
           </button>
         </motion.div>

@@ -1,36 +1,39 @@
 import { motion } from 'motion/react';
 import { Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
-const CARDS = [
-  {
-    title: 'ABOUT WINGS',
-    japaneseTitle: '羽田国際高校唯一の\n男女混成チアリーディングチーム。',
-    image: '/about-wings.jpg',
-    fallbackImage: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800',
-    link: 'VIEW MORE',
-    path: '/about'
-  },
-  {
-    title: 'PERFORMANCE',
-    japaneseTitle: '大会で魅せる、\n最高のパフォーマンス。',
-    image: '/performance.jpg',
-    fallbackImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800',
-    link: 'VIEW MORE',
-    path: '/'
-  },
-  {
-    title: 'MOVIE',
-    japaneseTitle: 'WINGSの躍動を、\nムービーで体感。',
-    image: '/movie.jpg',
-    fallbackImage: 'https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&q=80&w=800',
-    link: 'VIEW MORE',
-    path: '/',
-    isMovie: true,
-  }
-];
+import { useLanguage } from '../context/LanguageContext';
 
 export default function CardsSection() {
+  const { t } = useLanguage();
+
+  const CARDS = [
+    {
+      title: t.cards.about.title,
+      description: t.cards.about.desc,
+      image: '/about-wings.jpg',
+      fallbackImage: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800',
+      link: t.cards.about.button,
+      path: '/about'
+    },
+    {
+      title: t.cards.performance.title,
+      description: t.cards.performance.desc,
+      image: '/performance.jpg',
+      fallbackImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800',
+      link: t.cards.performance.button,
+      path: '/'
+    },
+    {
+      title: t.cards.movie.title,
+      description: t.cards.movie.desc,
+      image: '/movie.jpg',
+      fallbackImage: 'https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&q=80&w=800',
+      link: t.cards.movie.button,
+      path: '/',
+      isMovie: true,
+    }
+  ];
+
   return (
     <section className="bg-navy-dark py-0 -mt-20 relative z-20">
       <div className="grid grid-cols-1 md:grid-cols-3">
@@ -61,12 +64,12 @@ export default function CardsSection() {
             
             {/* Content */}
             <div className="absolute inset-0 p-12 flex flex-col justify-end">
-              <h3 className="font-display text-4xl tracking-widest text-white mb-6 transition-transform duration-500 group-hover:-translate-y-2">
+              <h3 className="font-display text-4xl tracking-widest text-white mb-6 transition-transform duration-500 group-hover:-translate-y-2 uppercase">
                 {card.title}
               </h3>
               
-              <p className="font-sans text-xs text-white/70 leading-relaxed whitespace-pre-line mb-10 opacity-80">
-                {card.japaneseTitle}
+              <p className="font-sans text-xs text-white/70 leading-relaxed whitespace-pre-line mb-10 opacity-80 h-12">
+                {card.description}
               </p>
               
               <div className="flex items-center justify-between">

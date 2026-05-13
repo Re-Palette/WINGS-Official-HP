@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import { motion, useScroll, useSpring } from 'motion/react';
 import { useEffect } from 'react';
+import { LanguageProvider } from './context/LanguageContext';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -17,12 +18,12 @@ function ScrollToTop() {
   return null;
 }
 
-export default function App() {
+function AppContent() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
 
   return (
@@ -41,5 +42,13 @@ export default function App() {
         </Routes>
       </main>
     </Router>
+  );
+}
+
+export default function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   );
 }

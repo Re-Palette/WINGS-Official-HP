@@ -1,7 +1,10 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-center bg-navy-dark">
       {/* Background Image with Overlay */}
@@ -34,10 +37,10 @@ export default function Hero() {
           className="flex flex-col"
         >
           <h2 className="font-display text-[12vw] md:text-[8vw] leading-[0.8] tracking-tighter text-white">
-            ONE TEAM.
+            {t.hero.headlineWhite}
           </h2>
           <h2 className="font-display text-[12vw] md:text-[8vw] leading-[0.8] tracking-tighter text-gold">
-            ONE SKY.
+            {t.hero.headlineGold}
           </h2>
         </motion.div>
 
@@ -48,11 +51,11 @@ export default function Hero() {
           transition={{ delay: 1.2, duration: 1 }}
           className="mt-4 space-y-0.5"
         >
-          <p className="font-oswald text-[10px] md:text-xs tracking-[0.3em] text-white/90">
-            HANEDA INTERNATIONAL HIGH SCHOOL
+          <p className="font-oswald text-[10px] md:text-xs tracking-[0.3em] text-white/90 uppercase">
+            {t.hero.subline1}
           </p>
-          <p className="font-oswald text-[10px] md:text-xs tracking-[0.3em] text-white/90">
-            CHEERLEADING TEAM
+          <p className="font-oswald text-[10px] md:text-xs tracking-[0.3em] text-white/90 uppercase">
+            {t.hero.subline2}
           </p>
           <p className="font-display text-4xl md:text-5xl tracking-widest text-white mt-3">
             “WINGS”
@@ -69,7 +72,7 @@ export default function Hero() {
           <button className="group relative border border-gold/50 px-8 py-3 overflow-hidden transition-all hover:border-gold">
              <div className="absolute inset-0 bg-gold translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
              <span className="relative z-10 font-oswald text-sm tracking-[0.3em] text-gold group-hover:text-navy-dark transition-colors flex items-center gap-4">
-                JOIN US <ArrowRight size={18} />
+                {t.hero.joinUs} <ArrowRight size={18} />
              </span>
           </button>
         </motion.div>
